@@ -1,0 +1,138 @@
+$AccentColor: #008597; 
+$ForegroundColor: #fff;
+$BackgroundColor: #EBEBEB;
+
+$AccentText: $AccentColor;
+$NormalText: #4d4d4d;
+$HoveredText: #3a3a3a;
+
+@mixin CardProps 
+{
+  background-color: $ForegroundColor;
+  box-shadow: 0px 5px 4px #00000010;
+}
+
+@mixin Round-1 { border-radius: 0.25rem; }
+@mixin Round-2 { border-radius: 0.5rem; }
+@mixin Round-3 { border-radius: 0.75rem; }
+@mixin Round-4 { border-radius: 1rem; }
+
+
+body
+{
+  background-color: #EBEBEB;
+}
+
+.App{  padding-top: 7rem; }
+
+.Sidebar
+{
+  position: fixed;
+  
+  left: 0;
+  top: 0px;
+
+  padding-top: 6rem;
+
+  height: 100vh;
+  width: 13%;
+
+  text-align: center;
+
+  background-color: $ForegroundColor;
+
+  h4 {
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-bottom: 2.25rem;
+  }
+
+  a {
+    color: $NormalText;
+    margin-left: 1.25rem;
+
+    :hover {
+      color: $HoveredText;
+    }
+  }
+
+  .active {
+    color: $AccentText;
+  }
+}
+
+.NavBar
+{
+  position: fixed;
+
+  top: 0px;
+
+  width: 100%;
+  height: 4rem;
+
+  padding: 0.75rem;
+
+  @include CardProps;
+
+  h3 {
+    font-weight: 500;
+    color: $AccentText;
+  }
+
+  h6 {
+    font-weight: 500;
+    color: $AccentText;
+  }
+
+
+  .center {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+  }
+
+  .search {
+    position: absolute;
+    right: 5rem;
+  }
+
+  .btn {
+    position: absolute;
+    background-color: $AccentColor;
+  }
+}
+
+.Card
+{
+  position: relative;
+  padding:  4rem;
+  
+  width: 50%;
+  
+  margin-left: 20%;
+  margin-bottom: 2rem;
+  
+  @include CardProps;
+  @include Round-1;
+}
+
+.ScrollBar
+{
+  position: fixed;
+
+  top: 7rem;
+  right: 3rem;
+
+  width: 20%;
+
+  .Scroller
+  {
+    position: relative;
+    padding:  4rem;
+        
+    margin-bottom: 2rem;
+    
+    @include CardProps;
+    @include Round-1;
+  }  
+}
