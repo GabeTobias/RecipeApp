@@ -14,7 +14,7 @@ class NavBar extends Component {
 
         <div class="row">
           <div className="col-2 mr-auto ml-3 mt-2">
-          <a href="#"><h6>Sign-out</h6></a>
+            <a href="#"><h6>Sign-out</h6></a>
           </div>
 
           <div className="col-2 search">
