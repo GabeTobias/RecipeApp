@@ -1,0 +1,162 @@
+$AccentColor: #008597;
+$ForegroundColor: #fff;
+$BackgroundColor: #ebebeb;
+
+$AccentText: $AccentColor;
+$LightText: #868686;
+$NormalText: #4d4d4d;
+$HoveredText: #3a3a3a;
+
+@mixin CardProps {
+  background-color: $ForegroundColor;
+  box-shadow: 0px 5px 4px #00000010;
+}
+
+@mixin Round-1 {
+  border-radius: 0.25rem;
+}
+@mixin Round-2 {
+  border-radius: 0.5rem;
+}
+@mixin Round-3 {
+  border-radius: 0.75rem;
+}
+@mixin Round-4 {
+  border-radius: 1rem;
+}
+
+body {
+  background-color: #ebebeb;
+}
+
+small {
+  color: $LightText;
+}
+
+a {
+  text-decoration: none;
+
+  :hover {
+    text-decoration: underline !important;
+  }
+}
+
+.LinkContainer {
+  transform: rotate(0);
+}
+
+.App {
+  padding-top: 7rem;
+}
+
+.Card {
+  position: relative;
+  padding: 0rem;
+
+  width: 50%;
+
+  margin-left: 20%;
+  margin-bottom: 3rem;
+
+  overflow: hidden;
+
+  h3 {
+    font-weight: 600;
+    color: $NormalText;
+  }
+
+  p {
+    font-size: 1.05rem;
+    color: $NormalText;
+  }
+
+  .hero {
+    width: 100%;
+    height: 30vh;
+    object-fit: cover;
+  }
+
+  .CardTimestamp {
+    float: right;
+    margin-top: 0.2rem;
+  }
+
+  .CardText {
+    padding: 2rem;
+    padding-bottom: 1rem;
+  }
+
+  .CardHeader {
+    width: 100%;
+    height: 2.5rem;
+  }
+
+  .tag {
+    float: left;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: $AccentText;
+  }
+
+  @include CardProps;
+  @include Round-1;
+}
+
+.FeedHeader {
+  padding: 1rem 1.5rem 1rem 1.5rem;
+  
+  border-radius: 0.25rem 0.25rem 0rem 0rem !important;
+
+  margin-left: 20%;
+  width: 50%;
+
+  hr {
+    margin-bottom: -1rem;
+  }
+  
+  a {
+    float: right;
+    margin-top: -1.7rem;
+    color: $LightText;
+  }
+  
+  @include CardProps;
+  @include Round-1;
+}
+
+.CreatePost {
+  position: sticky;
+  top: 4rem;
+  padding: 1rem 1.5rem 1rem 1.5rem;
+
+  height: 4.25rem;
+  width: 50%;
+
+  margin-left: 20%;
+  margin-bottom: 1.5rem;
+  
+  z-index: 101;
+
+  border-radius: 0rem 0rem 0.25rem 0.25rem !important;
+
+  img {
+    float: left;
+    width: 2.5rem;
+    height: 2.5rem;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 0.5rem;
+  }
+
+  input {
+    width:82%;
+    float: left;
+  }
+
+  button {
+    float: right;
+  }
+
+  @include CardProps;
+  @include Round-1;
+}

@@ -1,0 +1,75 @@
+@import 'common';
+
+.NotifictionCard {
+  width: 50%;
+
+  margin-left: 20%;
+  margin-bottom: 0rem;
+
+  padding: 1rem 1rem 0rem 1rem;
+
+  img {
+    float: left;
+    margin-top: 0.5rem;
+    margin-right: 1rem;
+  }
+
+  h5 {
+    margin-bottom: 0rem;
+  }
+
+  .profile {
+    width:  2.25rem;
+    height: 2.25rem;
+
+    margin-top: 0.35rem;
+    margin-right: 1rem;
+
+    float: left;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+  }
+  
+  @include CardProps;
+}
+
+.NotificationHeader {
+  width: 50%;
+  height: 4.25rem;
+
+  background-color: $ForegroundColor;
+
+  margin-left: 20%;
+  margin-bottom: 0rem;
+  
+  border-radius: 0.25rem 0.25rem 0rem 0rem;
+
+  font-weight: lighter;
+  color: $NormalText;
+
+  position: sticky;
+  top: 4rem;
+
+  z-index: 101;
+
+  h3 {
+    float: left;
+  }
+
+  img {
+    float: right;
+    margin-top:  0.4rem;
+  }
+
+  hr {
+    float: left;
+    width: 100%;
+    margin-top: 0.6rem;
+  }
+
+  .bounds {
+    padding: 1rem 1rem 0.75rem 1rem;
+  }
+}

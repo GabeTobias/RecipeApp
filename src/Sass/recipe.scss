@@ -1,0 +1,93 @@
+@import "common";
+
+.RecipeInfo {
+  padding: 1rem 1rem 1rem 1rem;
+  margin-bottom: 2rem;
+
+  color: $NormalText;
+
+  b {
+    font-weight: bold;
+  }
+
+  p {
+    margin-bottom: 0.5rem;
+  }
+
+  label {
+    font-size: 1rem;
+    color: $NormalText;
+
+    margin-top: -0.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  input[type="checkbox"]:checked + label {
+    text-decoration: line-through;
+    color: $LightText;
+  }
+
+  .header {
+    margin-left: 2rem;
+  }
+
+  @include CardProps;
+  @include Round-1;
+}
+
+.Recipe {
+  .ProfileThumb {
+    margin-top: -1.5rem;
+    clear: left;
+  }
+
+  .RecipeSteps {
+    hr {
+      clear: left;
+    }
+
+    .Step {
+      clear: left;
+
+      padding-right: 3rem;
+
+      h5 {
+        float: left;
+        font-weight: 600 !important;
+        color: $NormalText;
+      }
+
+      .Title {
+        margin-top: 0.75rem;
+        margin-left: 1rem;
+        margin-bottom: 0rem;
+      }
+
+      .Details {
+        clear: left;
+        float: left;
+        margin-left: 5rem;
+        margin-top: 0rem;
+        color: $NormalText;
+      }
+
+      .Number {
+        float: left;
+        width: 2rem;
+        height: 2rem;
+        padding-top: 0.15rem;
+
+        margin-left: 2rem;
+        margin-bottom: -0.5rem;
+        margin-top: 1rem;
+
+        border-radius: 50%;
+        font-size: 1.25rem;
+        text-align: center;
+
+        background-color: $LightText;
+        color: #fff;
+      }
+    }
+  }
+}

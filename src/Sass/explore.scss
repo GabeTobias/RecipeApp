@@ -1,0 +1,64 @@
+@import 'common';
+
+.ExploreCategory {
+  width: 50%;
+
+  margin-left: 20%;
+  margin-bottom: 2rem;
+
+  padding: 0.75rem 0.5rem 0.5rem 1rem;
+  border-radius: 0rem 0rem 0.25rem 0.25rem;
+
+  position: sticky;
+  top: 4rem;
+
+  z-index: 101;
+
+  h5 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: $AccentText;
+    margin-bottom: -0.25rem;
+  }
+
+  a {
+    float: right;
+    margin-top: -1rem;
+    margin-right: 1rem;
+    color: $LightText;
+  }
+
+  @include CardProps;
+}
+
+.ExploreHeader {
+  width: 50%;
+
+  margin-left: 20%;
+  margin-bottom: 0rem;
+
+  padding: 0.75rem 0.5rem 0.5rem 1rem;
+  border-radius: 0.25rem 0.25rem 0rem 0rem;
+
+  z-index: 101;
+
+  hr {
+    margin-bottom: -0.5rem;
+    padding-bottom: 0rem;
+  }
+
+  h2 {
+    font-weight: light;
+    color: $NormalText;
+    margin-bottom: -0.1rem;
+  }
+
+  a {
+    float: right;
+    margin-top: -1.2rem;
+    margin-right: 1rem;
+    color: $LightText;
+  }
+
+  @include CardProps;
+}

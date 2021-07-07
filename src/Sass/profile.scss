@@ -1,0 +1,136 @@
+@import 'common';
+
+.ProfileThumb {
+  padding: 1.5rem 2rem 0rem 2rem;
+
+  margin-top: -1rem;
+
+  height: 4.5rem;
+
+  img {
+    width: 3rem;
+    height: 3rem;
+
+    float: left;
+
+    object-fit: cover;
+
+    margin-right: 0.75rem;
+    margin-top: -0.1rem;
+
+    border-radius: 50%;
+  }
+
+  h5 {
+    color: $NormalText;
+
+    font-size: 1rem;
+
+    margin-bottom: 0rem;
+    margin-left: 1rem;
+  }
+
+  small {
+    font-size: 0.9rem;
+  }
+
+  a {
+    float: right;
+    margin-top: -0.75rem;
+
+    color: $AccentText;
+  }
+}
+
+.Profile {
+  position: sticky;
+  top: 4rem;
+
+  width: 100%;
+
+  z-index: 100;
+
+  hr {
+    margin-top: 1.8rem;
+  }
+
+  .hero {
+    float: left;
+    height: 25vh;
+
+    margin-bottom: 1.25rem;
+
+    transition: 0.2s;
+  }
+
+  .ProfileImg {
+    width: 9rem;
+    height: 9rem;
+
+    float: left;
+
+    margin-top: -11vh;
+    margin-left: 2rem;
+
+    object-fit: cover;
+
+    border-radius: 13vh;
+
+    transition: 0.2s;
+  }
+
+  .Name {
+    padding-left: 12rem;
+
+    margin-bottom: 0.1rem;
+    margin-left: 2rem;
+
+    font-size: 1.2rem;
+
+    transition: 0.2s;
+  }
+
+  .Skill {
+    padding-left: 12rem;
+    margin-left: 2rem;
+
+    font-weight: lighter;
+    font-size: 1rem;
+
+    color: $AccentText;
+
+    transition: 0.2s;
+  }
+
+  .tabItem {
+    width: 33%;
+
+    float: left;
+
+    color: $NormalText;
+
+    font-size: 1.1rem;
+    font-weight: 100;
+    text-align: center;
+
+    padding-bottom: 0.5rem;
+  }
+
+  .Active {
+    color: $AccentColor;
+    font-weight: 400;
+
+    margin-bottom: 0px;
+
+    //border-bottom: 5px solid $AccentColor;
+  }
+}
+
+.Suggested {
+  .header {
+    margin-left: 2rem;
+  }
+
+  @include CardProps;
+  @include Round-1;
+}

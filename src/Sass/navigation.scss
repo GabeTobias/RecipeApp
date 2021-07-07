@@ -1,0 +1,109 @@
+@import 'common';
+
+.Sidebar {
+  position: fixed;
+
+  left: 0;
+  top: 0px;
+
+  z-index: 101;
+
+  padding-top: 6rem;
+  padding-left: 2.25rem;
+
+  height: 100vh;
+  width: 14%;
+
+  background-color: $ForegroundColor;
+
+  h4 {
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-bottom: 2.25rem;
+  }
+
+  a {
+    color: $NormalText;
+    margin-left: 1rem;
+
+    :hover {
+      color: $HoveredText;
+    }
+  }
+
+  .active {
+    color: $AccentText;
+    font-weight: bold;
+  }
+}
+
+.NavBar {
+  position: fixed;
+
+  top: 0px;
+
+  z-index: 102;
+
+  width: 100%;
+  height: 4rem;
+
+  padding: 0.75rem;
+
+  @include CardProps;
+
+  h3 {
+    margin-left: -13%;
+    font-weight: 500;
+    color: $AccentText;
+  }
+
+  h6 {
+    font-weight: 500;
+    color: $AccentText;
+  }
+
+  .center {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+  }
+
+  .search {
+    position: absolute;
+    width: 20%;
+    right: 3rem;
+
+    input {
+      background-color: #eaeaea;
+    }
+  }
+
+  .btn {
+    position: absolute;
+    background-color: $AccentColor;
+  }
+}
+
+.Spacer {
+  height: 50vh;
+}
+
+.ScrollBar {
+  position: fixed;
+  top: 7rem;
+  right: 3rem;
+
+  float: right;
+
+  width: 20%;
+
+  .Scroller {
+    position: relative;
+    padding: 4rem;
+
+    margin-bottom: 2rem;
+
+    @include CardProps;
+    @include Round-1;
+  }
+}
