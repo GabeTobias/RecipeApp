@@ -4,7 +4,7 @@
   "description": "Instruction based twitter clone",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --mode development",
+    "start": "node start",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Gabriel S. Tobias",
@@ -27,6 +27,7 @@
   "dependencies": {
     "@babel/plugin-proposal-class-properties": "^7.10.4",
     "@fortawesome/free-solid-svg-icons": "^5.15.3",
+    "express": "^4.17.1",
     "file-loader": "^6.1.0",
     "mini-css-extract-plugin": "^0.9.0",
     "mobx": "^5.15.4",
